@@ -16,7 +16,7 @@ export class NgxQrWithImageComponent implements AfterViewInit {
   private _content:string;
 
   title = 'qr-code-test';
-  @Input("img-height") imgHeihgt:number = 100;
+  @Input("img-height") imgHeight:number = 100;
   @Input("img-width") imgWidth:number = 100;
   @Input("show") show:boolean = true;
   @Input("size") qrCodeSize:number = 500;
@@ -55,7 +55,7 @@ export class NgxQrWithImageComponent implements AfterViewInit {
 
       // fixed sizes
       let iWidth = this.imgWidth;
-      let iHeight = this.imgWidth;
+      let iHeight = this.imgHeight;
 
       let _that = this; 
       img.onload = () => {
